@@ -3,6 +3,8 @@ set nocompatible                  " disable vi compatibility
 syntax enable                     " enable syntax highlighting
 filetype plugin indent on         " turn on filetype detection and load plugin and indent files
 
+runtime macros/matchit.vim        " enable % to bounce between matching structures (e.g. def/end)
+
 set showcmd                       " show info on incomplete commands (e.g num lines selected in visual mode)
 set showmode                      " display what mode you are in
 
