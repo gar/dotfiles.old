@@ -1,0 +1,45 @@
+set nocompatible                  " disable vi compatibility
+
+syntax enable                     " enable syntax highlighting
+filetype plugin indent on         " turn on filetype detection and load plugin and indent files
+
+set showcmd                       " show info on incomplete commands (e.g num lines selected in visual mode)
+set showmode                      " display what mode you are in
+
+set backspace=indent,eol,start    " more intuitive backspacing
+
+set hidden                        " do not unload abandoned buffers
+
+set wildmenu                      " better command-line completion, go up/down dirs etc.
+set wildmode=list:longest         " complete to longest common substring (like a shell does)
+
+set ignorecase                    " ignore case of letters when searching
+set smartcase                     " override ignorecase if one or more uppper case chars used
+
+set number                        " show line numberings
+set ruler                         " show line and column numbers
+
+set incsearch                     " match strings as you type
+set hlsearch                      " highlight the matched string
+
+set wrap                          " wrap lines if they are longer than the width of the window
+set scrolloff=3                   " keep this number of lines displayed above or below the cursor
+
+set title                         " display filename and modified flags
+
+set visualbell                    " turn off beeping
+
+set nobackup                      " do not make a backup of a file before overwriting it
+set nowritebackup                 " same as above
+set directory=$HOME/.vim/tmp//,.  " keep swap files in one place
+
+set tabstop=2                     " number of spaces a tab counts for
+set shiftwidth=2                  " number of spaces to use for each level of autoindent
+set expandtab                     " always use spaces instead of tabs
+
+set laststatus=2                  " show the status line
+" ['buffer number'] 'possibly truncated file path' buffer and modified flags'
+" 'right justified line and column numbers' 'percentage through file'
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %=%-16(\ %l,%c-%v\ %)%P
+
+colorscheme vividchalk
