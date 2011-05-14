@@ -1,2 +1,2 @@
-ln -nfs ./vim/vimrc ~/.vimrc
-ln -nfs ./vim ~/.vim
+ln -nfs ~/bin/dotfiles/vim/vimrc ~/.vimrc
+ln -nfs ~/bin/dotfiles/vim ~/.vim
