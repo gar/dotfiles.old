@@ -1,0 +1,24 @@
+# bash
+alias ea="vim ~/bin/dotfiles/bash/aliases && source ~/bin/dotfiles/bash/aliases"
+alias l="ls -alGh"
+alias ..="cd .."
+alias tz="tar zxf"
+alias tj="tar jxf"
+alias get="curl -O"
+
+# vim
+alias v="vim"
+
+# mac os x
+alias oc="open -a /Applications/Google\ Chrome.app"
+
+# git
+alias g="git status"
+alias go="git checkout"
+alias ga="git add"
+
+# create a directory and change into it
+function mcd {
+  mkdir $1
+  cd $1
+}
