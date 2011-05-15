@@ -18,7 +18,7 @@ alias go="git checkout"
 alias ga="git add"
 alias gd="git diff"
 function gg() {
-  git commit -v -m "$*"
+  git commit -m "$*"
 }
 
 # create a directory and change into it
