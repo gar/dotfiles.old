@@ -5,6 +5,7 @@ alias ..="cd .."
 alias tz="tar zxf"
 alias tj="tar jxf"
 alias get="curl -O"
+alias tree="tree -C"
 
 # vim
 alias v="vim"
