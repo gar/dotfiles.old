@@ -1,5 +1,6 @@
 # bash
 alias ea="vim ~/.dotfiles/bash/aliases && source ~/.dotfiles/bash/aliases"
+alias reload="source ~/.bashrc"
 alias l="ls -alGh"
 alias ..="cd .."
 alias tz="tar zxf"
