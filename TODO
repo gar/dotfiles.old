@@ -2,8 +2,10 @@
   - homebrew
   - rvm
   - vim
+  - bash
   - tree
   - watch
+  - vcprompt
 * look into enabling the mail command on mac os x
 * remove need for password on sudo
 * add ssh/config
