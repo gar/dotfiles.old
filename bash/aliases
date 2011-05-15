@@ -17,8 +17,9 @@ alias g="git status"
 alias go="git checkout"
 alias ga="git add"
 alias gd="git diff"
-alias gps="git push"
-alias gpl="git pull"
+alias gp="git push"
+alias gl="git pull"
+alias gb="git branch"
 function gg() {
   git commit -m "$*"
 }
