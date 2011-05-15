@@ -1,5 +1,5 @@
 # bash
-alias ea="vim ~/bin/dotfiles/bash/aliases && source ~/bin/dotfiles/bash/aliases"
+alias ea="vim ~/.dotfiles/bash/aliases && source ~/.dotfiles/bash/aliases"
 alias l="ls -alGh"
 alias ..="cd .."
 alias tz="tar zxf"
@@ -16,9 +16,13 @@ alias oc="open -a /Applications/Google\ Chrome.app"
 alias g="git status"
 alias go="git checkout"
 alias ga="git add"
+alias gd="git diff"
+function gg() {
+  git commit -v -m "$*"
+}
 
 # create a directory and change into it
-function mcd {
+function mcd() {
   mkdir $1
   cd $1
 }

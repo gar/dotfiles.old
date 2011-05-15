@@ -1,2 +1,11 @@
-* add other programs to install script (homebrew, rvm, vim etc.)
-* complete bashrc
+* add other programs to install script
+  - homebrew
+  - rvm
+  - vim
+  - tree
+  - watch
+* look into enabling the mail command on mac os x
+* remove need for password on sudo
+* add ssh/config
+* find and add the key-installer script
+* look into the OpenTerminal app
