@@ -31,3 +31,11 @@ function mcd() {
   mkdir $1
   cd $1
 }
+
+# find the local ip address
+# TODO make this more robust
+function localip {
+  ifconfig |
+  grep 192.168 |
+  awk '{print $2}'
+}
