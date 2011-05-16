@@ -18,16 +18,17 @@ alias oc="open -a /Applications/Google\ Chrome.app"
 alias g="git status"
 alias go="git checkout"
 alias ga="git add"
+alias ga.="git add ."
 alias gd="git diff"
 alias gp="git push"
 alias gl="git pull"
 alias gb="git branch"
-function gg() {
+function gg {
   git commit -m "$*"
 }
 
 # create a directory and change into it
-function mcd() {
+function mcd {
   mkdir $1
   cd $1
 }
