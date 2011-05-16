@@ -47,7 +47,7 @@ function pushkey {
   if [ ! -f ~/.ssh/id_rsa ];
   then
     echo "no key pair exists, generating new pair..."
-    ssh-keygen -q -f ~/.ssh/id_rsa -t rsa
+    ssh-keygen -f ~/.ssh/id_rsa -t rsa
   fi
 
   # push key to server
