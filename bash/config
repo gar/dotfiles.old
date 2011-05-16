@@ -1,1 +1,1 @@
-PS1="\u@\h:\w \$(vcprompt --format "[%b%m%u]") ⚛ "
+PS1="\u@\h:\w\$(vcprompt --format ' [%b%m%u]') ⚛ "
