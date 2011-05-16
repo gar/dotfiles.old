@@ -40,3 +40,17 @@ function localip {
   grep 192.168 |
   awk '{print $2}'
 }
+
+# push local public key to remote server
+function pushkey {
+  # if no key pair, generate it
+  if [ ! -f ~/.ssh/id_rsa ];
+  then
+    echo "no key pair exists, generating new pair..."
+    ssh-keygen -q -f ~/.ssh/id_rsa -t rsa
+  fi
+
+  # push key to server
+  cat ~/.ssh/id_rsa.pub |
+    ssh $1 "test -d .ssh || mkdir .ssh && chmod 700 .ssh; cat >> .ssh/authorized_keys; chmod 600 .ssh/authorized_keys"
+}
