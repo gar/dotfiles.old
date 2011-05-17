@@ -8,6 +8,7 @@ alias tz="tar zxf"
 alias tj="tar jxf"
 alias get="curl -O"
 alias tree="tree -C"
+alias h="history"
 
 # vim
 alias v="vim"
