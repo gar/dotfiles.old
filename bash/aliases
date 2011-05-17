@@ -24,6 +24,9 @@ alias gd="git diff"
 alias gp="git push"
 alias gl="git pull"
 alias gb="git branch"
+alias gcl="git clone"
+alias ggr="git grep"
+alias gst="git stash"
 function gg {
   git commit -m "$*"
 }
