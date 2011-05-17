@@ -1,2 +1,12 @@
 source ~/.dotfiles/bash/config
 source ~/.dotfiles/bash/aliases
+
+# only source files if they exist
+function cond_source {
+  if [ -f "$1" ]; then
+    source "$1"
+  fi
+}
+
+cond_source ~/.bashrc.local
+cond_source ~/.vimrc.local
