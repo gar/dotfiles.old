@@ -58,3 +58,11 @@ function pushkey {
   cat ~/.ssh/id_rsa.pub |
     ssh $1 "test -d .ssh || mkdir .ssh && chmod 700 .ssh; cat >> .ssh/authorized_keys; chmod 600 .ssh/authorized_keys"
 }
+
+# show the most recently used commands on this box
+function mostusedcmds {
+  history |
+    awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' |
+    sort -rn |
+    head -20
+}
