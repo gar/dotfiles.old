@@ -20,5 +20,5 @@ Grab the latest source from [vim.org](http://www.vim.org/download.php#unix) and 
 ### Install these dotfiles
 
     git clone https://github.com/gar/dotfiles.git .dotfiles
-    sh .dotfiles/install.sh
+    ./.dotfiles/install.sh
 
