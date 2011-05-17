@@ -15,3 +15,5 @@
 * investigate folder name completion for ~/code directory
 * add local versions of files (e.g. bashrc_local, etc.)
 * add a netcheck command
+* add submodule init to install script for vim bundles
+* add taks to update all vim bundles
