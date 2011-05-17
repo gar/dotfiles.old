@@ -1,7 +1,3 @@
-# projects
-alias cdmi="cd ~/code/morrison-intranet"
-alias cdmw="cd ~/code/morrisonfs-web"
-
 # bash
 alias ea="vim ~/.dotfiles/bash/aliases && source ~/.dotfiles/bash/aliases"
 alias reload="source ~/.bashrc"
