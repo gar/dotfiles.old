@@ -1,1 +1,13 @@
+export PATH=~/bin:$PATH
+
+export EDITOR="vim"
+
+export HISTSIZE=100000
+export HISTFILESIZE=$HISTSIZE
+export HISTTIMEFORMAT="%F %T  "   # add time and date to history
+
+shopt -s cdspell      # make minor spelling corrections when cd-ing
+shopt -s histappend   # do not overwrite history when exiting shell
+
+# prompt uses vcprompt command (which should be in ~/bin)
 PS1="\u@\h:\w\$(vcprompt --format ' [%b%m%u]') ⚛ "
