@@ -2,6 +2,6 @@ export PATH=~/bin:$PATH
 export EDITOR="vim"
 export HISTSIZE=100000
 export HISTFILESIZE=$HISTSIZE
-export HISTTIMEFORMAT="%F %T"
+export HISTTIMEFORMAT="%F %T  "
 shopt -s cdspell
 shopt -s histappend
