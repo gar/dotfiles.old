@@ -17,3 +17,4 @@
 * add a netcheck command
 * add submodule init to install script for vim bundles
 * add taks to update all vim bundles
+* investigate bash autocompletion 
