@@ -15,6 +15,7 @@ alias v="vim"
 
 # mac os x
 alias oc="open -a /Applications/Google\ Chrome.app"
+alias o.="open ."
 
 # git
 alias g="git status"
