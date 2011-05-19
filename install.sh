@@ -8,3 +8,7 @@ ln -nfs ~/.dotfiles/bin ~/bin
 # vim config file and config directory
 ln -nfs ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -nfs ~/.dotfiles/vim ~/.vim
+# update vim bundles in submodules
+cd ~/.dotfiles
+git submodule init
+git submodule update
