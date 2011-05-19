@@ -26,3 +26,6 @@
 	path = vim/bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
   ignore = dirty
+[submodule "vim/bundle/vim-repeat"]
+	path = vim/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
