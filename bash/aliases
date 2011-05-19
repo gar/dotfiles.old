@@ -76,3 +76,12 @@ function mostusedcmds {
     sort -rn |
     head -20
 }
+
+# add a vim plugin to the pathogen bundle folder
+function add_vim_plugin {
+  plugin_name=$(basename $1 .git)    # expects arg to be in the format http://x/y/z.git 
+  cd ~/.dotfiles &&
+    git submodule add $1 vim/bundle/$plugin_name &&
+    vim -c "call pathogen#helptags()" -c "q" &&
+    git commit -m "added $plugin_name plugin to vim bundles"
+}
