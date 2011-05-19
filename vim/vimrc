@@ -44,6 +44,6 @@ set expandtab                     " always use spaces instead of tabs
 
 set laststatus=2                  " show the status line
 " [<buffer number>] <possibly truncated file path> <buffer, filetype and modified flags> <line and column numbers> <percentage through file>
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %=%-16(\ %l,%c-%v\ %)%P
+set statusline=\ %<%.99f\ %{fugitive#statusline()}\ %h%w%m%r%y\ %=%-16(\ %l,%c-%v\ %)%P
 
 colorscheme vividchalk
