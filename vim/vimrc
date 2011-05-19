@@ -1,6 +1,7 @@
 set nocompatible                  " disable vi compatibility
 
 silent! call pathogen#runtime_append_all_bundles()  " have pathogen install all bundles
+silent! call pathogen#helptags()                    " and then generate help for all bundles
 
 syntax enable                     " enable syntax highlighting
 filetype plugin indent on         " turn on filetype detection and load plugin and indent files
