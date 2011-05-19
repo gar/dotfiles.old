@@ -37,6 +37,8 @@ set visualbell                    " turn off beeping
 set nobackup                      " do not make a backup of a file before overwriting it
 set nowritebackup                 " same as above
 set directory=$HOME/.vim/tmp//,.  " keep swap files in one place
+set undodir=$HOME/.vim/tmp        " put undo files in one place
+set undofile
 
 set tabstop=2                     " number of spaces a tab counts for
 set shiftwidth=2                  " number of spaces to use for each level of autoindent
