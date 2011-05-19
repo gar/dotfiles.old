@@ -7,14 +7,10 @@
   - watch
   - vcprompt
 * turn install script into Rakefile
-* look into enabling the mail command on mac os x
 * add ssh/config
-* find and add the key-installer script
 * look into the OpenTerminal app
-* add more plugins to vim
 * investigate folder name completion for ~/code directory
-* add local versions of files (e.g. bashrc_local, etc.)
 * add a netcheck command
-* add submodule init to install script for vim bundles
 * add taks to update all vim bundles
 * investigate bash autocompletion 
+* add invisible characters to vimrc
