@@ -22,3 +22,6 @@
 	path = vim/bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
   ignore = dirty
+[submodule "vim/bundle/snipmate.vim"]
+	path = vim/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
