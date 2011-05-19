@@ -12,5 +12,4 @@
 * investigate folder name completion for ~/code directory
 * add a netcheck command
 * add taks to update all vim bundles
-* investigate bash autocompletion 
-* add invisible characters to vimrc
+* investigate bash autocompletion
