@@ -47,3 +47,6 @@ set laststatus=2                  " show the status line
 set statusline=\ %<%.99f\ %{fugitive#statusline()}\ %h%w%m%r%y\ %=%-16(\ %l,%c-%v\ %)%P
 
 colorscheme vividchalk
+
+" for the makegreen plugin, enable rspec support
+autocmd BufNewFile,BufRead *_spec.rb compiler rspec
