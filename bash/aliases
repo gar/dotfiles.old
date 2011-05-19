@@ -82,5 +82,6 @@ function installvimplugin {
   plugin_name=$(basename $1 .git)    # expects arg to be in the format http://x/y/z.git 
   cd ~/.dotfiles &&
     git submodule add $1 vim/bundle/$plugin_name &&
-    git commit -m "added $plugin_name plugin to vim bundles"
+    git commit -m "added $plugin_name plugin to vim bundles" &&
+    cd -
 }
