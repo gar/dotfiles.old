@@ -24,6 +24,9 @@ set smartcase                     " override ignorecase if one or more uppper ca
 set number                        " show line numberings
 set ruler                         " show line and column numbers
 
+set list                            " show invisibles
+set listchars=tab:▸\ ,eol:¬,trail:⋅ " use these characters for invisibles
+
 set incsearch                     " match strings as you type
 set hlsearch                      " highlight the matched string
 
@@ -48,7 +51,11 @@ set laststatus=2                  " show the status line
 " [<buffer number>] <possibly truncated file path> <buffer, filetype and modified flags> <line and column numbers> <percentage through file>
 set statusline=\ %<%.99f\ %{fugitive#statusline()}\ %h%w%m%r%y\ %=%-16(\ %l,%c-%v\ %)%P
 
+set t_Co=256 " enable 256 colors
 colorscheme blackboard
+" use these colors for invisibles
+highlight NonText ctermfg=237 guifg=#4a4a59
+highlight SpecialKey ctermfg=237 guifg=#4a4a59
 
 " for the makegreen plugin, enable rspec support
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
