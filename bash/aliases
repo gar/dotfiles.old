@@ -85,3 +85,9 @@ function installvimplugin {
     git commit -m "added $plugin_name plugin to vim bundles" &&
     cd -
 }
+
+# simple process grep function
+function pg {
+  ps aux |
+    grep "$1"
+}

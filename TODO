@@ -13,3 +13,4 @@
 * add a netcheck command
 * add taks to update all vim bundles
 * investigate bash autocompletion
+* improve pg function to not include the grep
