@@ -91,3 +91,9 @@ function pg {
   ps aux |
     grep "$1"
 }
+
+# cd to a dir and list contents
+function cl {
+  cd "$1" &&
+    ls -alGh
+}
