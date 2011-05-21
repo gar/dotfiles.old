@@ -60,6 +60,12 @@ cl() {
     ls -alGh
 }
 
+# simple wikipedia lookup
+wiki() {
+  keyword=$(echo "$*" | tr -d " ") # first remove any spaces
+  dig +short txt $keyword.wp.dg.cx
+}
+
 # mac os x
 alias oc="open -a /Applications/Google\ Chrome.app"
 alias o.="open ."
