@@ -9,6 +9,7 @@ alias tj="tar jxf"
 alias get="curl -O"
 alias tree="tree -C"
 alias h="history"
+alias cdot="cd ~/.dotfiles"   # TODO see if this is still needed
 
 # vim
 alias v="vim"
