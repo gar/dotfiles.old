@@ -2,5 +2,10 @@
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 
+# enable magic space to expand ! arguments on the command line
+$if Bash
+  Space: magic-space
+$endif
+
 # put machine specific readline settings in inputrc.local
 $include ~/.inputrc.local
