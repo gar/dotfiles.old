@@ -7,5 +7,8 @@ $if Bash
   Space: magic-space
 $endif
 
+# macro to speed up inserting a forgotten option
+"\eo": "\C-p\C-a\ef "
+
 # put machine specific readline settings in inputrc.local
 $include ~/.inputrc.local
