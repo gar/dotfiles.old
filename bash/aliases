@@ -13,8 +13,8 @@ alias cdot="cd ~/.dotfiles"   # TODO see if this is still needed
 
 # create a directory and change into it
 mcd() {
-  mkdir $1
-  cd $1
+  mkdir "$1"
+  cd "$1"
 }
 
 # find the local ip address
@@ -36,7 +36,7 @@ pushkey() {
 
   # push key to server
   cat ~/.ssh/id_rsa.pub |
-    ssh $1 "test -d .ssh || mkdir .ssh && chmod 700 .ssh; cat >> .ssh/authorized_keys; chmod 600 .ssh/authorized_keys"
+    ssh "$1" "test -d .ssh || mkdir .ssh && chmod 700 .ssh; cat >> .ssh/authorized_keys; chmod 600 .ssh/authorized_keys"
 }
 
 # show the most recently used commands on this box
@@ -89,9 +89,9 @@ alias v="vim"
 
 # add a vim plugin to the pathogen bundle folder
 installvimplugin() {
-  plugin_name=$(basename $1 .git)    # expects arg to be in the format http://x/y/z.git 
+  plugin_name=$(basename "$1" .git)    # expects arg to be in the format http://x/y/z.git 
   cd ~/.dotfiles &&
-    git submodule add $1 vim/bundle/$plugin_name &&
+    git submodule add "$1" vim/bundle/$plugin_name &&
     git commit -m "added $plugin_name plugin to vim bundles" &&
     cd -
 }
