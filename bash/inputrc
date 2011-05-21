@@ -1,0 +1,2 @@
+# put machine specific settings in inputrc.local
+$include ~/.inputrc.local
