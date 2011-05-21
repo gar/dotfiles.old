@@ -1,2 +1,6 @@
-# put machine specific settings in inputrc.local
+# up and down search for lines beginning with what you have typed
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# put machine specific readline settings in inputrc.local
 $include ~/.inputrc.local
