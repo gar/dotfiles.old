@@ -1,3 +1,6 @@
+# show type of file when completing
+set visible-stats on
+
 # up and down search for lines beginning with what you have typed
 "\e[A": history-search-backward
 "\e[B": history-search-forward
