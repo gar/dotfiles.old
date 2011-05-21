@@ -83,6 +83,9 @@ alias gst="git stash"
 gg() {
   git commit -m "$*"
 }
+gag() {
+  git commit -a -m "$*"
+}
 
 # vim
 alias v="vim"
