@@ -1,5 +1,11 @@
+# ignore case when suggesting completions
+set completion-ignore-case on
 # show type of file when completing
 set visible-stats on
+# no need to TAB twice to see all
+set show-all-if-ambiguous on
+# use ESC-s to cycle through options for completion
+"\es": menu-complete
 
 # up and down search for lines beginning with what you have typed
 "\e[A": history-search-backward
