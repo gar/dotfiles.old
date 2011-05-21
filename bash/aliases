@@ -25,6 +25,11 @@ localip() {
   awk '{print $2}'
 }
 
+# find the external ip address
+externalip() {
+  curl ifconfig.me
+}
+
 # push local public key to remote server
 pushkey() {
   # if no key pair, generate it
