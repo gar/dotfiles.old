@@ -48,7 +48,7 @@ mostusedcmds() {
     head -20
 }
 
-# simple process grep 
+# simple process grep
 pg() {
   ps aux |
     grep "$1"
@@ -92,7 +92,7 @@ alias v="vim"
 
 # add a vim plugin to the pathogen bundle folder
 installvimplugin() {
-  plugin_name=$(basename "$1" .git)    # expects arg to be in the format http://x/y/z.git 
+  plugin_name=$(basename "$1" .git)    # expects arg to be in the format http://x/y/z.git
   cd ~/.dotfiles &&
     git submodule add "$1" vim/bundle/$plugin_name &&
     git commit -m "added $plugin_name plugin to vim bundles" &&
