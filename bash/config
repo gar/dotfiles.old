@@ -6,8 +6,10 @@ export HISTSIZE=100000
 export HISTFILESIZE=$HISTSIZE
 export HISTTIMEFORMAT="%F %T  "   # add time and date to history
 
-shopt -s cdspell      # make minor spelling corrections when cd-ing
-shopt -s histappend   # do not overwrite history when exiting shell
+shopt -s cdspell            # make minor spelling corrections when cd-ing
+
+shopt -s histappend         # append to history on disk, don't overwrite
+PROMPT_COMMAND="history -a" # write previous command to disk at prompt
 
 # prompt uses vcprompt command (which should be in ~/bin)
 PS1="\u@\h:\w\$(vcprompt --format ' [%b%m%u]') ⚛ "
