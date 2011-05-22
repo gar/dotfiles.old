@@ -63,7 +63,8 @@ highlight SpecialKey ctermfg=white guifg=#4a4a59
 " location of dictionary on Mac OS X
 set dictionary=/usr/share/dict/words
 
-" for the makegreen plugin, enable rspec support
+" for the makegreen plugin, enable ruby testunit and rspec support
+autocmd BufNewFile,BufRead *_test.rb compiler rubyunit
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 " display bookmarks in NERDTree
