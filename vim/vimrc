@@ -59,3 +59,6 @@ highlight SpecialKey ctermfg=white guifg=#4a4a59
 
 " for the makegreen plugin, enable rspec support
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+
+" toggle NERDTree
+map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
