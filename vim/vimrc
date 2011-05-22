@@ -72,3 +72,6 @@ let NERDTreeShowBookmarks=1
 nmap <silent> <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 " always show hidden files in NERDTree
 let NERDTreeShowHidden=1
+
+" toggle spell checking for this buffer
+nmap <silent> <buffer> <Leader>s :set spell<CR>
