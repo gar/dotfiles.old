@@ -25,7 +25,7 @@ set number                        " show line numberings
 set ruler                         " show line and column numbers
 
 set list                          " show invisibles
-set listchars=tab:▸\ ,trail:⋅     " use these characters for invisibles
+set listchars=tab:→\ ,trail:⋅     " use these characters for invisibles
 
 set incsearch                     " match strings as you type
 set hlsearch                      " highlight the matched string
