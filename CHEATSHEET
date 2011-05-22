@@ -1,0 +1,30 @@
+# Cheatsheet
+
+
+## vim
+
+### Ack
+
+ * :Ack <string> - search for <string> in files in current dir and below
+ * :AckFile <filename> - search for <filename> in the current dir and below
+
+### NERDCommenter
+
+ * <Leader>cSPACE - toggle comments of current line or selection
+ * <Leader>cl - comment out a selection with a row of comment markers aligned to the left
+
+### Surround
+
+ * surroundings can be ', ", `, ), }, ], > and more. t is for tag, < can also be used for tag
+ * ds<target> - deletes the target surrounding e.g. ds"
+ * cs<target><new> - changes the surrounding from <target> to <new> e.g. ds"'
+ * ys<vim movement><target> - "you surround" the vim movement with <target> e.g. ysW)
+ * ysi<movement><target> - "you surround internal", same as ys but doesn't pad with spaces for (, <, [
+ * yss<target> - surrounds the entire line with <target>
+
+### NERDTree
+
+ * :Bookmark <name> - this will add a bookmark named <name> for the current node
+ * o (or go) - open file under cursor (g version keeps focus in NERDTree)
+ * s (or gs) - open file in new vsplit
+ * t (or gt) - open file in new tab
