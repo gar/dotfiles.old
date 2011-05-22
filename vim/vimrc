@@ -66,4 +66,4 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 " display bookmarks in NERDTree
 let NERDTreeShowBookmarks=1
 " toggle NERDTree drawer
-map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <silent> <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
