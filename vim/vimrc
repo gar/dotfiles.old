@@ -19,7 +19,7 @@ set wildmenu                      " better command-line completion, go up/down d
 set wildmode=list:longest         " complete to longest common substring (like a shell does)
 
 set ignorecase                    " ignore case of letters when searching
-set smartcase                     " override ignorecase if one or more uppper case chars used
+set smartcase                     " override ignorecase if one or more upper case chars used
 
 set number                        " show line numberings
 set ruler                         " show line and column numbers
