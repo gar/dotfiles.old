@@ -91,6 +91,7 @@ alias gcl="git clone"
 alias ggr="git grep"
 alias gam="git commit --amend"
 alias gst="git stash"
+alias ggr="git grep"
 gg() {
   git commit -m "$*"
 }
