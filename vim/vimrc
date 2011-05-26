@@ -60,6 +60,9 @@ colorscheme blackboard
 highlight NonText ctermfg=white guifg=#4a4a59
 highlight SpecialKey ctermfg=white guifg=#4a4a59
 
+" set the Leader to space
+let mapleader = " "
+
 " location of dictionary on Mac OS X
 set dictionary=/usr/share/dict/words
 
