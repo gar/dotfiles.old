@@ -99,6 +99,11 @@ gag() {
   git commit -a -m "$*"
 }
 
+# heroku gem
+alias hc="heroku console"
+alias hl="heroku logs"
+
+
 # vim
 alias v="vim"
 
