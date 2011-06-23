@@ -98,6 +98,11 @@ gg() {
 gag() {
   git commit -a -m "$*"
 }
+# clone a repo and cd into it
+gcd() {
+  git clone "$1" &&
+    cd $(basename "$1" .git)
+}
 
 # vim
 alias v="vim"
