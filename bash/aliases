@@ -104,6 +104,11 @@ gcd() {
     cd $(basename "$1" .git)
 }
 
+# heroku gem
+alias hc="heroku console"
+alias hl="heroku logs"
+
+
 # vim
 alias v="vim"
 

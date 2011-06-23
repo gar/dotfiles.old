@@ -28,7 +28,6 @@ set list                          " show invisibles
 set listchars=tab:→\ ,trail:⋅     " use these characters for invisibles
 
 set incsearch                     " match strings as you type
-set hlsearch                      " highlight the matched string
 
 set wrap                          " wrap lines if they are longer than the width of the window
 set scrolloff=3                   " keep this number of lines displayed above or below the cursor
@@ -49,6 +48,8 @@ endif
 set tabstop=2                     " number of spaces a tab counts for
 set shiftwidth=2                  " number of spaces to use for each level of autoindent
 set expandtab                     " always use spaces instead of tabs
+
+set clipboard=unnamed             " use the system clipboard by default
 
 set laststatus=2                  " show the status line
 " [<buffer number>] <possibly truncated file path> <buffer, filetype and modified flags> <line and column numbers> <percentage through file>
