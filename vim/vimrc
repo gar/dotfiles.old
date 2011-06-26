@@ -80,3 +80,5 @@ let NERDTreeShowHidden=1
 
 " toggle spell checking for this buffer
 nmap <silent> <buffer> <Leader>s :set spell<CR>
+
+nmap <silent> <Leader>e :execute 'Extradite'<CR>
