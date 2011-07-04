@@ -71,6 +71,9 @@ set dictionary=/usr/share/dict/words
 autocmd BufNewFile,BufRead *_test.rb compiler rubyunit
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
+" make K work as inverser of J
+nmap K i<cr><esc>k$
+
 " display bookmarks in NERDTree
 let NERDTreeShowBookmarks=1
 " toggle NERDTree drawer
