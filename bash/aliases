@@ -71,6 +71,11 @@ wiki() {
   dig +short txt $keyword.wp.dg.cx
 }
 
+# grep history
+ghi() {
+  history | grep "$1"
+}
+
 # mac os x
 alias oc="open -a /Applications/Google\ Chrome.app"
 alias o.="open ."
