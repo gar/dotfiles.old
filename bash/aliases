@@ -116,6 +116,7 @@ alias hl="heroku logs"
 
 # vim
 alias v="vim"
+alias vo="vim -O"
 
 # add a vim plugin to the pathogen bundle folder
 installvimplugin() {
