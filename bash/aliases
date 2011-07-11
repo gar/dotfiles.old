@@ -103,6 +103,11 @@ gg() {
 gag() {
   git commit -a -m "$*"
 }
+# update your local barnch to origin's master
+gup() {
+  git fetch &&
+    git merge --no-ff origin/master
+}
 # clone a repo and cd into it
 gcd() {
   git clone "$1" &&
