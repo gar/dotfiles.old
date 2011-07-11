@@ -38,7 +38,6 @@ set visualbell                    " turn off beeping
 
 set nobackup                      " do not make a backup of a file before overwriting it
 set nowritebackup                 " same as above
-set directory=$HOME/.vim/tmp//,.  " keep swap files in one place
 if version >= 730
   " persistent undo
   set undodir=$HOME/.vim/tmp
