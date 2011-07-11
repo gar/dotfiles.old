@@ -14,3 +14,5 @@
 * add taks to update all vim bundles
 * investigate bash autocompletion
 * improve pg function to not include the grep
+* vim command which pastes a number of times, incrementing any numbers found in the lines
+* vim command which adds spaces to line up = or => in multiple assign lines
